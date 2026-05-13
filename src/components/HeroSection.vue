@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-[85vh] sm:min-h-[110vh] flex items-center justify-center overflow-hidden px-6 pt-32 sm:pt-0">
+  <section class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 pt-32 pb-16">
     <!-- Floating Glass Artifacts (Parallax) -->
     <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
       <div 
@@ -19,7 +19,7 @@
     </div>
 
     <div class="relative z-10 text-center max-w-4xl hero-content" style="opacity: 0; transform: translateY(40px)">
-      <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight">
+      <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight">
         Sua empresa merece uma
         <span class="text-gradient"> presença digital</span>
         que gera resultado.
