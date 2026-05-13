@@ -172,17 +172,7 @@ const projects = [
     url: "https://gutthierryimoveis.com/",
     image: "/projects/gutthierry.png",
   },
-  {
-    title: "Garbson Souza",
-    category: "Portfólio Pessoal",
-    type: "Sites",
-    description:
-      "Portfólio interativo com design futurista simulando ambiente de desenvolvimento front-end com visual de console.",
-    gradient: "bg-gradient-to-br from-blue-500/20 to-indigo-600/5",
-    tagColor: "text-blue-400",
-    url: "https://garbson.dev/",
-    image: "/projects/garbson.png",
-  },
+
   {
     title: "GuiaZ",
     category: "Plataforma Digital",
