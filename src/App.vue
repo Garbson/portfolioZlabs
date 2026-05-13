@@ -1,5 +1,6 @@
 <template>
   <div class="app-container relative">
+    <BigBangLoader />
     <SpaceBackground />
     <div class="relative z-10">
       <Navbar />
@@ -13,6 +14,7 @@
 </template>
 
 <script setup>
+import BigBangLoader from './components/BigBangLoader.vue'
 import SpaceBackground from './components/SpaceBackground.vue'
 import Navbar from './components/Navbar.vue'
 import HeroSection from './components/HeroSection.vue'

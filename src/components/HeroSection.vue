@@ -1,5 +1,23 @@
 <template>
-  <section class="relative min-h-[75vh] sm:min-h-screen flex items-start sm:items-center justify-center overflow-hidden px-6 pt-32 sm:pt-0">
+  <section class="relative min-h-[85vh] sm:min-h-[110vh] flex items-center justify-center overflow-hidden px-6 pt-32 sm:pt-0">
+    <!-- Floating Glass Artifacts (Parallax) -->
+    <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+      <div 
+        class="artifact absolute top-[20%] left-[15%] w-32 h-32 glass rounded-2xl rotate-12 blur-[1px] opacity-20 hidden md:block"
+        data-speed="0.02"
+      ></div>
+      <div 
+        class="artifact absolute bottom-[30%] right-[10%] w-48 h-48 border border-white/10 rounded-full blur-[2px] opacity-10 hidden md:block"
+        data-speed="-0.03"
+      >
+        <div class="absolute inset-4 border border-white/5 rounded-full animate-pulse"></div>
+      </div>
+      <div 
+        class="artifact absolute top-[60%] left-[10%] w-16 h-16 glass rounded-full blur-[1px] opacity-15 hidden md:block"
+        data-speed="0.05"
+      ></div>
+    </div>
+
     <div class="relative z-10 text-center max-w-4xl hero-content" style="opacity: 0; transform: translateY(40px)">
       <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight">
         Sua empresa merece uma
@@ -42,6 +60,21 @@ onMounted(() => {
     duration: 1.5,
     ease: 'power4.out',
     delay: 0.3,
+  })
+
+  // Parallax Logic
+  window.addEventListener('mousemove', (e) => {
+    const { clientX, clientY } = e
+    const centerX = window.innerWidth / 2
+    const centerY = window.innerHeight / 2
+    
+    gsap.to('.artifact', {
+      x: (i, target) => (clientX - centerX) * target.dataset.speed * 50,
+      y: (i, target) => (clientY - centerY) * target.dataset.speed * 50,
+      rotate: (i, target) => (clientX - centerX) * target.dataset.speed * 0.5,
+      duration: 1,
+      ease: 'power2.out'
+    })
   })
 })
 </script>
