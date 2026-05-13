@@ -1,7 +1,7 @@
 <template>
   <div class="fixed top-4 left-4 right-4 z-50 flex justify-center">
     <nav
-      class="w-full max-w-5xl px-6 flex justify-between items-center rounded-2xl transition-all duration-500 border border-white/[0.06]"
+      class="w-full max-w-7xl px-6 flex justify-between items-center rounded-2xl transition-all duration-500 border border-white/[0.06]"
       :class="scrolled
         ? 'py-3 bg-white/[0.04] backdrop-blur-2xl border-white/[0.1] shadow-lg shadow-black/20'
         : 'py-4 bg-white/[0.02] backdrop-blur-xl'"
@@ -20,7 +20,8 @@
           {{ link.label }}
         </a>
         <a
-          href="#contato"
+          href="https://wa.me/5527999705214"
+          target="_blank"
           class="glass px-5 py-2.5 text-sm font-semibold hover:bg-white/10 transition-all duration-300"
         >
           Contato
@@ -68,7 +69,8 @@
           {{ link.label }}
         </a>
         <a
-          href="#contato"
+          href="https://wa.me/5527999705214"
+          target="_blank"
           class="glass text-center px-5 py-3 text-base font-semibold hover:bg-white/10 transition-all"
           @click="menuOpen = false"
         >

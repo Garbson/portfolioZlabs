@@ -16,7 +16,7 @@
           </p>
 
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5527999705214"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center gap-3 glass-strong px-10 py-5 text-lg font-bold hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-300 group"
