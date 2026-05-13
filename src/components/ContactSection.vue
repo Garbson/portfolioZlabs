@@ -8,7 +8,7 @@
         <div class="relative z-10">
           <p class="text-sm font-semibold text-zblue uppercase tracking-widest mb-6">Contato</p>
           <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Vamos tirar sua ideia<br class="hidden sm:block" />
+            Vamos tirar sua ideia <br class="hidden sm:block" />
             <span class="text-gradient">do papel?</span>
           </h2>
           <p class="text-lg md:text-xl text-gray-400 mb-12 max-w-xl mx-auto">
